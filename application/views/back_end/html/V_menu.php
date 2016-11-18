@@ -25,16 +25,19 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="<?= site_url(); ?>/C_admin"><i class="fa fa-home fa-fw nav_icon"></i>Dashboard</a>
+                            <a href="<?= site_url(); ?>C_admin"><i class="fa fa-home fa-fw nav_icon"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="<?= site_url(); ?>/Info"><i class="fa fa-info-circle fa-fw nav_icon"></i>Info Wisata</a>
+                            <a href="<?= site_url(); ?>Info"><i class="fa fa-info-circle fa-fw nav_icon"></i>Info Wisata</a>
                         </li>
                         <li>
-                            <a href="<?= site_url(); ?>/PaketWisata"><i class="fa fa-file fa-fw nav_icon"></i>Paket Wisata</a>
+                            <a href="<?= site_url(); ?>PaketWisata"><i class="fa fa-file fa-fw nav_icon"></i>Paket Wisata</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-car fa-fw nav_icon"></i>Armada</a>
+                        </li>
+                        <li>
+                            <a href="<?= site_url()  ?>" ><i class="fa fa-calendar fa-fw nav_icon"></i>Jadwal</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-cog nav_icon"></i>Setting<span class="fa arrow"></span></a>

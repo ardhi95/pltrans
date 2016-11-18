@@ -2,6 +2,15 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_armada extends CI_Model {
+
+	function get_enum_values( $table, $field ){
+		//enum
+	    $type = $this->db->query( "SHOW COLUMNS FROM {$table} WHERE Field = '{$field}'" )->row( 0 )->Type;
+	    preg_match("/^enum\(\'(.*)\'\)$/", $type, $matches);
+	    $enum = explode("','", $matches[1]);
+	    return $enum;
+	}
+
 	public function tampil(){
 		return $this->db->get('armada')->result();
 	}
