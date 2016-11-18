@@ -16,7 +16,7 @@ class Armada extends CI_Controller {
 
 	public function insert()
 	{
-		$this->load->view('back_end/armada/insert');
+		$this->load->view('back_end/armada/insertArmada');
 	}
 
 	public function insertKet(){
