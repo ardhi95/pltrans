@@ -1,11 +1,13 @@
 <?php $this->load->view('back_end/html/V_menu'); ?>
 
 <div class="panel-body1">
+<form action="<?php echo site_url('armada/insertData'); ?>" enctype="multipart/form-data" method="post">
 <div class="form-group">
           <!-- <label for="focusedinput" class="col-sm-2 control-label">Nama Info Wisata</label> -->
+            <input type="hidden" name="id_armada" id="">
             <div class="col-sm-5">
             <!-- Nama Armada -->
-              <input type="text" class="form-control1" id="focusedinput" placeholder="Nama Armada" name="">
+              <input type="text" class="form-control1" id="focusedinput" placeholder="Nama Armada" name="nama_armada">
             </div>
             <div class="col-sm-5">
             <!-- Foto Armada -->
@@ -15,7 +17,7 @@
               <button type="submit" class="btn-success btn">Simpan</button>
             </div>
         </div>
-
+</form>
 <table class="table">
     <thead>
         <tr>

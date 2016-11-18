@@ -37,7 +37,7 @@ class Armada extends CI_Controller {
 		$this->upload->initialize($config);
  
 		//if upload failed
-		if (!$this->upload->do_upload('upload')){ //name="upload"
+		if (!$this->upload->do_upload('foto')){ //name="upload"
 			echo $this->upload->display_errors();
 		}
 		else {
@@ -46,8 +46,7 @@ class Armada extends CI_Controller {
 			$object = array(
 					'id_armada' => $this->input->post('id_armada'),
 					'nama_armada' => $this->input->post('nama_armada'),
-					'foto' => $gbr['file_name'],
-					'deskripsi' => $this->input->post('deskripsi')
+					'foto' => $gbr['file_name']
 				);
 			$this->m_armada->insert($object);
 			redirect('armada','refresh');
