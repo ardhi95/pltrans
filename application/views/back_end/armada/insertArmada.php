@@ -35,6 +35,7 @@
 									<div class="col-sm-2">
 										<button type="submit" class="btn-success btn">Simpan</button>
 									</div>
+									<div class="col-sm-2"></div>
 								</div>
 						<!-- <div class="col-sm-5">
 							<input type="file" class="form-control1" id="focusedinput" placeholder="Default Input" name="foto">

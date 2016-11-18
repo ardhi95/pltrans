@@ -1,16 +1,29 @@
 <?php $this->load->view('back_end/html/V_menu'); ?>
 
 <div class="panel-body1">
-<a href="<?php echo site_url('armada/insert/'); ?>"class="btn btn-info btn-sm"><span class="glyphicon glyphicon-plus"></span> Tambah</a>
+<div class="form-group">
+          <!-- <label for="focusedinput" class="col-sm-2 control-label">Nama Info Wisata</label> -->
+            <div class="col-sm-5">
+            <!-- Nama Armada -->
+              <input type="text" class="form-control1" id="focusedinput" placeholder="Nama Armada" name="">
+            </div>
+            <div class="col-sm-5">
+            <!-- Foto Armada -->
+              <input type="file" class="form-control1" id="focusedinput" name="foto">
+            </div>
+            <div class="col-sm-2" >
+              <button type="submit" class="btn-success btn">Simpan</button>
+            </div>
+        </div>
 
 <table class="table">
     <thead>
         <tr>
          	<th>#</th>
-         	<td>nama_armada</td>
-			<td>foto</td>
-			<td>deskripsi</td>
-			<td>action</td>
+         	  <td>Nama Armada</td>
+            <td>Foto</td>
+      			<td>Deskripsi</td>
+      			<td></td>
         </tr>
       </thead>
       <?php $no = 1; foreach ($query as $key) { ?>      
