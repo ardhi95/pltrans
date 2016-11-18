@@ -20,21 +20,17 @@ class GaleriWisata extends CI_Controller {
 		$nmfile = "IMG_PL".time();
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'gif|jpg|png';
-		//$config['max_size']	= '2048'; //in kb 
-		//$config['max_width']  = '2048';
-		//$config['max_height']  = '2048';
+		$config['max_size']	= '2048'; //in kb 
+		$config['max_width']  = '2048';
+		$config['max_height']  = '2048';
 		$config['file_name'] = $nmfile;
  
 		$this->upload->initialize($config);
  
 		//if upload failed
 		if (!$this->upload->do_upload('photo')){ //name="upload"
-			//echo $this->upload->display_errors();
-			?>
-				<script type="text/javascript">
-					alert('Gagal');
-				</script>
-			<?php
+			echo $this->upload->display_errors();
+			
 		}
 		else {
 			//if upload success

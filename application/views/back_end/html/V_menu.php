@@ -34,7 +34,7 @@
                             <a href="<?= site_url(); ?>PaketWisata"><i class="fa fa-file fa-fw nav_icon"></i>Paket Wisata</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-car fa-fw nav_icon"></i>Armada</a>
+                            <a href="<?= site_url() ?>Armada"><i class="fa fa-car fa-fw nav_icon"></i>Armada</a>
                         </li>
                         <li>
                             <a href="<?= site_url()  ?>" ><i class="fa fa-calendar fa-fw nav_icon"></i>Jadwal</a>

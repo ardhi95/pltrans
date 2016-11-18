@@ -3,7 +3,7 @@
 	<?php $this->load->view('front_end/html/V_menu'); ?>
 	<?php $this->load->view('front_end/html/V_homeslide'); ?>
     
-			
+			 
 		<div class="content">
 			<!-- Info Wisata -->
 			<div class="welcome">
