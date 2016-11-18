@@ -11,13 +11,13 @@ class Armada extends CI_Controller {
 
 	public function index(){
 		$data['query'] = $this->m_armada->tampil();
-		$this->load->view('armada/list', $data);
+		$this->load->view('back_end/armada/list', $data);
 	}
 
 	public function insert(){
 		//enum disini		
 		$data['sql'] = $this->m_armada->get_enum_values('ket_armada','jam');
-		$this->load->view('armada/insert',$data);
+		$this->load->view('back_end/armada/insert',$data);
 	}
 
 	public function insertData(){
