@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Armada extends CI_Controller {
-	public function __construct(){
+	public function __construct(){ 
 		parent::__construct();
 		if ($this->session->userdata('username')=="") {
 			redirect('login','refresh');
@@ -14,7 +14,12 @@ class Armada extends CI_Controller {
 		$this->load->view('back_end/armada/list', $data);
 	}
 
-	public function insert(){
+	public function insert()
+	{
+		$this->load->view('back_end/armada/insert');
+	}
+
+	public function insertKet(){
 		//enum disini		
 		$data['sql'] = $this->m_armada->get_enum_values('ket_armada','jam');
 		$this->load->view('back_end/armada/insert',$data);
