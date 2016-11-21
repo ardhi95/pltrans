@@ -34,7 +34,7 @@
 			<td><?php echo $key->nama_armada; ?></td>
 			<td><img src="<?=base_url()?>uploads/<?php echo $key->foto; ?>" width="auto" height="100"></td>
           
-          	<td><a href="<?php echo site_url('armada/insert/')."$key->id_armada"; ?>"class="btn btn-info btn-sm"><span class="glyphicon glyphicon-picture"></span>&nbsp Ket Armada</a></td>
+          	<td><a href="<?php echo site_url('armada/insertKet/')."$key->id_armada"; ?>"class="btn btn-info btn-sm"><span class="glyphicon glyphicon-picture"></span>&nbsp Ket Armada</a></td>
           <td>
             <a href="<?php echo site_url('armada/edit/')."$key->id_armada"; ?>" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
             <a href="<?php echo site_url('armada/del/')."$key->id_armada"; ?>"class="btn btn-danger btn-sm" onclick="return confirm_delete()"><span class="glyphicon glyphicon-trash"></span></a>

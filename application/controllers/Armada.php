@@ -16,13 +16,24 @@ class Armada extends CI_Controller {
 
 	public function insert()
 	{
-		$this->load->view('back_end/armada/insertArmada');
+		$this->load->view('back_end/armada/insert');
 	}
 
 	public function insertKet(){
 		//enum disini		
 		$data['sql'] = $this->m_armada->get_enum_values('ket_armada','jam');
 		$this->load->view('back_end/armada/insert',$data);
+	}
+
+	public function proInsertKet($value='')
+	{
+			$object = array(
+					'jam' => $this->input->post('jam'),
+					'ket' => $this->input->post('ket'),
+					'harga' => $this->input->post('harga')
+				);
+			$this->m_ketArmada->doInsert($object);
+			redirect('armada','refresh');
 	}
 
 	public function insertData(){
