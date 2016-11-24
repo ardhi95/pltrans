@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<head>
+<head> 
 <title>PL Trans</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,6 +31,28 @@
 <script src="<?= base_url() ?>assets/back_end/js/d3.v3.js"></script>
 <script src="<?= base_url() ?>assets/back_end/js/rickshaw.js"></script>
 -->
+
+<!-- Full Calendar -->
+<!-- FullCalendar -->
+<link href='<?= base_url() ?>assets/back_end/css/fullcalendar.css' rel='stylesheet' />
+
+
+    <!-- Custom CSS -->
+    <style>
+	#calendar {
+		max-width: 900px;
+	}
+    </style>
+
+
+<!-- datatables -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+
 <script type="text/javascript">
 function confirm_delete() {
   return confirm('Are You Sure ?');

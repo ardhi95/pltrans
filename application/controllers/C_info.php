@@ -11,6 +11,10 @@ class C_info extends CI_Controller {
 		$this->load->view('front_end/V_info',$data);		
 	}
 
+	public function readmore()
+	{
+		$this->load->view('front_end/Info_preview');
+	}
 }
 
 /* End of file C_info.php */

@@ -21,14 +21,18 @@
 <script src="<?= base_url(); ?>assets/front_end/js/bootstrap.min.js"></script>
 <script src="<?= base_url(); ?>assets/front_end/js/calendar.js"></script>
 <script src="<?= base_url(); ?>assets/front_end/js/scroll.js"></script>
+
+	<!-- <script src="<?php base_url() ?>assets/front_end/js/jquery.js"></script>
+    <script src="<?php base_url() ?>assets/front_end/js/jquery.easing.min.js"></script>
+    <script src="<?php base_url() ?>assets/front_end/js/scrolling-nav.js"></script> -->
 <!---->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?= base_url(); ?>assets/front_end/css/flexslider.css" type="text/css" media="screen" />
-<link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!---strat-date-piker---->
+<!-- <link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'> -->
+
 <!-- requried-jsfiles-for owl -->
-							<link href="<?= base_url(); ?>assets/front_end/css/owl.carousel.css" rel="stylesheet">
+<!-- 							<link href="<?= base_url(); ?>assets/front_end/css/owl.carousel.css" rel="stylesheet">
 							    <script src="js/owl.carousel.js"></script>
 							        <script>
 							    $(document).ready(function() {
@@ -41,7 +45,7 @@
 							        pagination : true,
 							      });
 							    });
-							    </script>
+							    </script> -->
 							 <!-- //requried-jsfiles-for owl -->
 
 </head>

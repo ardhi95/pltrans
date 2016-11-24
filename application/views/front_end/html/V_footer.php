@@ -48,9 +48,11 @@
 			</div>
 		</div>	
 		<!--footer-->
+		<!-- <section id="contact" class="contact-section"> -->
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
+					<section id="contact"></section>
 						<p>&copy; 2016 PL Trans | Design by <a href="http://thppl.net">Thppl</a></p>
 					</div>	
 					
@@ -62,7 +64,8 @@
 					</div> -->	
 					</div>
 			</div>
+		<!-- </section> -->
 	<!--footer-->
-
+	
 </body>
 </html>

@@ -6,13 +6,5 @@
     display:none;
 }
 
-.navbar-brand > img {
-    width: 70%;
-}
 
-@media(min-width:780px){
-	.navbar-brand > img {
-    	width: 20%;
-	}
-}
 

@@ -12,24 +12,24 @@
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="col-md-12 col-xs-8">
-						  <ul class="nav navbar-nav navbar-left">
-						  <li class="navbar-brand logo">
-						  	
-								<!-- <h1><a href="index.html"><span>PL  </span> Trans</a></h1> -->
-								<img  src="<?= base_url() ?>assets/front_end/images/logo.png" >
+						  	<ul class="nav navbar-nav navbar-left">
+						  	<div class="menuku">
+						  	<li class="navbar-brand">
+						  		<img  src="<?= base_url() ?>assets/front_end/images/logo.png" >
 							</li>
+							</div>
 							</ul>
 						</div>
 						</div>
 						
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						  	<ul class="nav navbar-nav">
+						  	<ul class="nav navbar-nav" style="margin-top: 25px;">
 							<li><a href="<?= base_url('') ?>index.php/C_home">Home </a></li>
 							<li><a href="<?= base_url('') ?>index.php/C_info">Info Wisata</a></li>
 							<li><a href="<?= base_url('') ?>index.php/C_paket">Paket Wisata</a></li>
 							<li><a href="<?= base_url('') ?>index.php/C_armada">Armada</a></li>
-							<li><a id="kecontak" href="#" role="button" data-toggle="tooltip">Contact</a></li>
+							<li><a href="#contact">Contact</a></li>
 							 
 						  </ul>
 						</div><!-- /.navbar-collapse -->

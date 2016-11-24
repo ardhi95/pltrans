@@ -61,7 +61,6 @@ nav a:focus {
 	outline: none;
 }
 .header {
-    
     background: #eaeaea;
 }
 .navbar-default {
@@ -1203,6 +1202,7 @@ p.wel.text {
 .banner-text {
     width: 9.5%;
 }
+.
 }
 @media(max-width:736px){
 .navbar-toggle {
@@ -1764,4 +1764,13 @@ h3.tittle, h3.tittle1 {
 }
 .contact-bottom {
     margin: 1em 0;
+}
+
+.menuku > .navbar-brand > img {
+  
+  max-width: 1000px;
+}
+.menuku > .navbar-brand>img {
+  padding: 15px;
+  width: 150%;
 }

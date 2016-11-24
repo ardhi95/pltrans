@@ -7,11 +7,13 @@
 				<div class="container">
 					<h2 class="tittle">Info Wisata</h2>
 					<div class="rest-grids">
-						<div class="col-md-8 rest-grid">
+						<div class="col-md-12 rest-grid">
 						<?php foreach ($sql as $key) { ?>
 							<div class="rest-top">
-								<h3><?php echo $key->nama_info; ?></h3>
-								<img src="<?= base_url() ?>uploads/<?php echo $key->foto; ?>" class="img-responsive gray" align="center"/>
+								<h3 align="center"><?php echo $key->nama_info; ?></h3>
+								
+								<img src="<?= base_url() ?>uploads/<?php echo $key->foto; ?>" class="img-responsive gray" style="margin: 0 auto;"/>
+								
 								<p align="justify">
 										<?php $a = $key->blog;
 										$b = strip_tags($a);
@@ -22,12 +24,12 @@
          									<span class="glyphicon glyphicon-search"></span> Read more
         								</a>
 								</p>
-
+								<div class="clearfix"></div>
 							</div>
 							<?php } ?>
 							<div class="rest-bottom">
 							<?php foreach ($query as $key) { ?> 
-								<div class="col-md-6 rest-left">
+								<div class="col-md-4 rest-left">
 									<a href="#"><img src="<?= base_url() ?>uploads/<?php echo $key->foto; ?>" class="img-responsive gray" alt=""/></a>
 									<h4><?php echo $key->nama_info; ?></h4>
 									<p>
@@ -46,26 +48,7 @@
 							</div>
 						</div>
 						
-						<div class="col-md-4 rest-grid1">
-							<h3>Calendar</h3>
-							<div class="reser-grid1">
-								<div id="my-calendar"></div>
-							</div>
-							<div class="lastest">
-								<div class="lastest-top">
-								<img src="<?= base_url() ?>assets/front_end/images/w5.jpg" class="img-responsive gray" alt=""/>
-									<h4>Luxury Resort</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
-								</div>
-								<div class="lastest-top">
-								<img src="<?= base_url() ?>assets/front_end/images/ga7.jpg" class="img-responsive gray" alt=""/>
-									<h4>Swinging Pool</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
+						
 				</div>
 			</div>
 		</div>

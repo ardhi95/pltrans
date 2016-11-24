@@ -37,7 +37,7 @@
                             <a href="<?= site_url() ?>Armada"><i class="fa fa-car fa-fw nav_icon"></i>Armada</a>
                         </li>
                         <li>
-                            <a href="<?= site_url()  ?>" ><i class="fa fa-calendar fa-fw nav_icon"></i>Jadwal</a>
+                            <a href="<?= site_url()  ?>Calendar" ><i class="fa fa-calendar fa-fw nav_icon"></i>Jadwal</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-cog nav_icon"></i>Setting<span class="fa arrow"></span></a>
