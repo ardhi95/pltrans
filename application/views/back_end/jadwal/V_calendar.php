@@ -1,4 +1,5 @@
-<?php $this->load->view('back_end/html/V_first'); 
+<?php 	
+		$this->load->view('back_end/html/V_first'); 
 		$this->load->view('back_end/html/V_menu');
 ?>
 	

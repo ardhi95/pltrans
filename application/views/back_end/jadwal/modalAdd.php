@@ -2,7 +2,8 @@
 		<div class="modal fade" id="ModalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 			<div class="modal-content">
-			<form class="form-horizontal" method="POST" action="addEvent.php">
+			<!-- YANG INI BOSS 'addEvent' -> diganti ke CI -->
+			<form class="form-horizontal" method="POST" action="<?php echo site_url('calendar/addEvent'); ?>">
 			
 			  <div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
