@@ -34,7 +34,7 @@
 
 <!-- Full Calendar -->
 <!-- FullCalendar -->
-<link href='<?= base_url() ?>assets/back_end/css/fullcalendar.css' rel='stylesheet' />
+<link href='<?= base_url()?>assets/back_end/css/fullcalendar.css' rel='stylesheet' />
 
 
     <!-- Custom CSS -->

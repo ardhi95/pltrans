@@ -17,6 +17,11 @@ class M_jadwal extends CI_Model {
 		$this->db->update('events', $object);
 	}
 
+	public function updateEvent($id_s, $object){
+		$this->db->where('id', $id_s);
+		$this->db->update('events', $object);
+	}
+
 	public function deleteEvent($id){
 		$this->db->where('id', $id);
 		$this->db->delete('events');

@@ -38,7 +38,24 @@ class Calendar extends CI_Controller {
 			redirect('calendar','refresh');
 		}
 	}
-}
 
-/* End of file Calendar.php */
-/* Location: ./application/controllers/Calendar.php */
+	public function editEventDate(){
+		$id 	= $this->input->post('Event');
+		$id_s	= $id[0];
+
+		$start	= $this->input->post('Event');
+		$starts = $start[1];;
+
+		$end 	= $this->input->post('Event');
+		$ends 	= $end[2];
+
+		$object = array(
+					'start' => $starts,
+					'end'	=> $ends
+				);
+
+		$this->m_jadwal->updateEvent($id_s, $object);
+		redirect('calendar','refresh');
+	}
+
+}
