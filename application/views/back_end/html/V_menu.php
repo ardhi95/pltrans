@@ -53,7 +53,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php site_url() ?>Set_contact">
                                         <i class="fa fa-id-card nav_icon"></i> Contact</span>
                                     </a>
                                 </li>

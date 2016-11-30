@@ -27,10 +27,10 @@
 <!-- CK Editor -->
 <script type="text/javascript" src="<?php echo base_url().'assets/ckeditor/ckeditor.js';?>"></script>
 <script type="text/javascript">var base_url = '<?php echo base_url();?>';</script>
-<!--
+
 <script src="<?= base_url() ?>assets/back_end/js/d3.v3.js"></script>
 <script src="<?= base_url() ?>assets/back_end/js/rickshaw.js"></script>
--->
+
 
 <!-- Full Calendar -->
 <!-- FullCalendar -->
