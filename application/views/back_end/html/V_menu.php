@@ -43,17 +43,17 @@
                             <a href="#"><i class="fa fa-cog nav_icon"></i>Setting<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php site_url()?>about">
                                         <i class="fa fa-info-circle nav_icon"></i> About PL Trans</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php site_url()?>homeSlider">
                                         <i class="fa fa-photo nav_icon"></i> Home Slider</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php site_url() ?>Set_contact">
+                                    <a href="<?php site_url()?>contact">
                                         <i class="fa fa-id-card nav_icon"></i> Contact</span>
                                     </a>
                                 </li>
