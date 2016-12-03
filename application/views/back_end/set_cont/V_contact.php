@@ -28,6 +28,39 @@
 			<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 		</form>
 	</div>
+
+	<div class="table-responsive">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Office</th>
+					<th>Mobile</th>
+					<th>e-mail</th>
+					<th>Fax</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($contact as $key) { ?>
+					<tr>
+						<td><?php echo $key->office; ?></td>
+						<td><?php echo $key->mobile; ?></td>
+						<td><?php echo $key->email; ?></td>
+						<td><?php echo $key->fax; ?></td>
+						<td>
+							<a href="<?php echo site_url('setting/editContact/')."$key->id_contact"; ?>" class="btn btn-info btn-sm">
+		          				<span class="glyphicon glyphicon-edit"></span> Edit
+		        			</a>
+								
+							<a href="<?php echo site_url('setting/deleteContact/')."$key->id_contact"; ?>" class="btn btn-info btn-sm">
+		          				<span class="glyphicon glyphicon-trash"></span> Delete
+		        			</a>
+						</td>
+					</tr>
+				<?php } ?>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 <?php $this->load->view('back_end/html/V_end'); ?>

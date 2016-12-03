@@ -4,16 +4,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class M_settings extends CI_Model {
 
 	public function about($data){
-		$this->db->query("INSERT INTO settings (about) VALUES('".$data['about']."')");
+		$this->db->insert('about', $data);
 	}
 
 	public function homeSlide($object){
-		$this->db->query("INSERT INTO settings (image) VALUES ('".$object['image']."')");
+		$this->db->query("INSERT INTO slider (image) VALUES ('".$object['image']."')");
 	}	
 
 	public function Contact($data){
-		$this->db->query("INSERT INTO settings (office,mobile,fax,email) VALUES ('".$data['office']."', '".$data['mobile']."', '".$data['fax']."', '".$data['email']."')");
-	}	
+		$this->db->insert('contact', $data);
+	}
+
+	public function displayAbout(){
+		return $this->db->query("SELECT about FROM settings");
+	}
 
 }
 
