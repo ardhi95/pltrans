@@ -26,6 +26,7 @@ class M_promo extends CI_Model {
 		$this->db->delete('promo');
 	}		
 
+
 }
 
 /* End of file M_promo.php */

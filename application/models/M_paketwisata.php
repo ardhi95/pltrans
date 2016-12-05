@@ -26,6 +26,11 @@ class M_paketwisata extends CI_Model {
 		$this->db->delete('paket_wisata');
 	}	
 
+	//public function promoOdd($id)
+	//{
+		//return $this->db->query("SELECT * FROM `paket_wisata` WHERE `id_paket` = %2 <> 0")->result();
+	//}
+
 }
 
 /* End of file M_paketwisata.php */

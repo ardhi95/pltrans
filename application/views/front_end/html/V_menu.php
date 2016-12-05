@@ -25,10 +25,10 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  	<ul class="nav navbar-nav" style="margin-top: 25px;">
-							<li><a href="<?= base_url('') ?>index.php/C_home">Home </a></li>
-							<li><a href="<?= base_url('') ?>index.php/C_info">Info Wisata</a></li>
-							<li><a href="<?= base_url('') ?>index.php/C_paket">Paket Wisata</a></li>
-							<li><a href="<?= base_url('') ?>index.php/C_armada">Armada</a></li>
+							<li><a href="<?= site_url('C_home') ?>">Home </a></li>
+							<li><a href="<?= site_url('C_info') ?>">Info Wisata</a></li>
+							<li><a href="<?= site_url('C_paket') ?>">Paket Wisata</a></li>
+							<li><a href="<?= site_url('C_armada') ?>">Armada</a></li>
 							<li><a href="#contact">Contact</a></li>
 							 
 						  </ul>

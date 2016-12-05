@@ -13,7 +13,7 @@ class C_info extends CI_Controller {
 
 	public function readmore()
 	{
-		$this->load->view('front_end/Info_preview');
+		$this->load->view('front_end/V_detailsInfo');
 	}
 }
 

@@ -5,7 +5,9 @@ class C_paket extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('front_end/V_paket');		
+		$data['sql']=$this->m_paketwisata->tampil();
+		//$data['query']=$this->m_paketwisata->promoOdd();
+		$this->load->view('front_end/V_paket', $data);		
 	}
 
 }
