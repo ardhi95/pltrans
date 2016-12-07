@@ -20,7 +20,6 @@ class Login extends CI_Controller {
 				$sess_data['logged_in'] = 'LogIn';
 				$sess_data['id_login'] = $sess->id_login;
 				$sess_data['username'] = $sess->username;
-				$sess_data['session_time'] = time();
 			}
 
 			$this->session->set_userdata($sess_data);

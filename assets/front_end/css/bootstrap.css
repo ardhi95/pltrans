@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  background: url('car-travel-holidays.jpg');
 }
 article,
 aside,
@@ -1090,7 +1091,11 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background: url('maxresdefault.jpg');
+  background-repeat:no-repeat;
+  background-size: 1370px 700px;
+  display: compact;
+
 }
 input,
 button,
@@ -3087,8 +3092,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: rgba(255, 255, 255, 0.35); /*#337ab7*/
+  border-color: transparent;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3097,8 +3102,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: rgba(217, 237, 247, 0.8);
+  border-color: transparent;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -5757,7 +5762,8 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  opacity: 1.1;
+  background-color: transparent;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #999;

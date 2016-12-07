@@ -1,3 +1,4 @@
+
 <?php $this->load->view('back_end/html/V_first'); ?>
 <div id="wrapper">
      <!-- Navigation -->
@@ -16,7 +17,7 @@
                         </li>
                         <li class="divider"></li>
                         
-                        <li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>  
+                        <li class="m_2"><a href="<?php echo site_url('logout'); ?>"><i class="fa fa-lock"></i> Logout</a></li>  
                     </ul>
                 </li>
             </ul>
@@ -43,17 +44,17 @@
                             <a href="#"><i class="fa fa-cog nav_icon"></i>Setting<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php site_url()?>about">
+                                    <a href="<?php echo site_url('setting/about')?>">
                                         <i class="fa fa-info-circle nav_icon"></i> About PL Trans</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php site_url()?>homeSlider">
+                                    <a href="<?php echo site_url('setting/homeSlider')?>">
                                         <i class="fa fa-photo nav_icon"></i> Home Slider</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php site_url()?>contact">
+                                    <a href="<?php echo site_url('setting/contact')?>">
                                         <i class="fa fa-id-card nav_icon"></i> Contact</span>
                                     </a>
                                 </li>

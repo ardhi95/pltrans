@@ -4,7 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Setting extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
-		
+		if ($this->session->userdata('username')=="") {
+			redirect('login','refresh');
+		}
 	}
 
 	// Tampilan...
@@ -60,6 +62,7 @@ class Setting extends CI_Controller {
 	}
 
 	public function doContact(){
+		//$id = 1;
 		$data = array(
 						'office' =>	$this->input->post('office'),
 						'mobile' => $this->input->post('mobile'),
@@ -70,6 +73,7 @@ class Setting extends CI_Controller {
 		$this->m_settings->Contact($data);
 		redirect('setting/contact','refresh');
 	}
+
 
 	// edit...
 

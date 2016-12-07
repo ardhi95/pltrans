@@ -12,7 +12,13 @@ class M_settings extends CI_Model {
 	}	
 
 	public function Contact($data){
-		$this->db->insert('contact', $data);
+		$this->db->where('id_contact', "1");
+		$this->db->update('contact', $data);
+	}
+
+	public function showContact()
+	{
+		return $this->db->get('contact')->result();
 	}
 
 	public function displayAbout(){

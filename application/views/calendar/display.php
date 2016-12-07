@@ -294,13 +294,13 @@
 			 url: 'editEventDate.php',
 			 type: "POST",
 			 data: {Event:Event},
-			 success: function(rep) {
-					if(rep == 'OK'){
-						alert('Saved');
-					}else{
-						alert('Could not be saved. try again.'); 
-					}
-				}
+			 // success: function(rep) {
+				// 	if(rep == 'OK'){
+				// 		alert('Saved');
+				// 	}else{
+				// 		alert('Could not be saved. try again.'); 
+				// 	}
+				// }
 			});
 		}
 		

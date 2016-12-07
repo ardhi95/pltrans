@@ -5,7 +5,23 @@
 		<form action="<?php echo site_url('setting/doAbout'); ?>" method="POST" role="form">
 				<legend>About PL Trans</legend>
 				
-				<textarea name="about"></textarea> <br>
+				<textarea name="about" id="content"></textarea>
+
+									<script type="text/javascript">
+									    CKEDITOR.replace( 'content',
+										    { 
+										    toolbar : [{ name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
+															{ name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
+    														{ name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
+    														{ name: 'insert', items : [ 'Image','Table','Smiley','Iframe' ] },
+    
+														],
+										    height: 300,
+										    /*resize_maxWidth: '%'*/
+										    width : '100%'
+										    }
+									    );	    
+								    </script>
 
 			<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
 		</form>
