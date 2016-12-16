@@ -11,9 +11,18 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="<?=base_url()?>assets/front_end/css/styles.css" rel="stylesheet">
+    <style type="text/css">
+      body{
+        background-image: url(maxresdefault.jpg);
+        background-repeat:no-repeat;
+        background-size: 1370px 700px;
+        display: compact;
+      }
+    </style>
 	</head>
 	<body>
 <!--login modal-->
+<!-- <img src="<?= base_url(); ?>assets/back_end/images/maxresdefault.jpg" width="100%" height="auto" class="img-responsive"> -->
 <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
