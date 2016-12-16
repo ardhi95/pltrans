@@ -4,25 +4,27 @@
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
+					<?php foreach ($contact as $key) { ?>
 					<div class="col-md-3 footer-grid">
-						<h4>Get In Touch</h4>
+						<h4>Contact Us</h4>
 						<ul>
-							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
-							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
-							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <a href="#"><a href="mailto:info@example.com">info@example.com</a></a></li>
-							<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
+							
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : <?php echo $key->office; ?></li>
+							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : <?php echo $key->mobile; ?></li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <?php echo $key->email; ?></li>
+							<!-- <li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li> -->
+						
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Hotel top links</h4>
-						<ul>
-							<li>Our Story</li>
-							<li>Sleep Program</li>
-							<li>Executive Travel Program</li>
-							<li>Enriched Wellness</li>
-						</ul>
+						<div class="social-icons">
+							<a href="<?php echo $key->facebook; ?>" target="_blank"><i class="ic_fb"></i></a>
+							<a href="<?php echo $key->instagram; ?>" target="_blank"><i class="ic_insta"></i></a>
+							<a href="<?php echo $key->twitter; ?>" target="_blank"><i class="ic_twit"></i></a>
+							<a href="#"><i class="icon2"></i></a>							
+						</div>
 					</div>
-
+					<?php } ?>
 					<div class="col-md-6 footer-grid">
 						  <form class="form-horizontal">
 						    <div class="form-group">

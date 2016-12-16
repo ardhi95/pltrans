@@ -4,7 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class M_settings extends CI_Model {
 
 	public function about($data){
-		$this->db->insert('about', $data);
+		$this->db->where('id_about', "1");
+		$this->db->update('about', $data);
 	}
 
 	public function homeSlide($object){

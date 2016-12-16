@@ -5,7 +5,8 @@ class C_armada extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('front_end/V_armada');		
+		$data['contact'] = $this->db->query("SELECT * FROM contact")->result();
+		$this->load->view('front_end/V_armada', $data);		
 	}
 
 }

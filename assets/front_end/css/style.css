@@ -502,17 +502,17 @@ h3.tittle1{
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-.social-icons i.icon:hover {
+.social-icons i.ic_fb:hover {
   background: #fdaf17 url(../images/img-sprite.png) no-repeat 0px 0px;
       transform: rotateY(360deg);
 }
-.social-icons i.icon {
+.social-icons i.ic_fb {
     background-position: 0px 0px;
 }
-.social-icons i.icon1 {
+.social-icons i.ic_twit {
     background-position: -32px 0px;
 }
-.social-icons i.icon1:hover {
+.social-icons i.ic_twit:hover {
   background: #fdaf17 url(../images/img-sprite.png) no-repeat -32px 0px;
       transform: rotateY(360deg);
 }
@@ -523,11 +523,11 @@ h3.tittle1{
   background: #fdaf17 url(../images/img-sprite.png) no-repeat -64px 0px;
       transform: rotateY(360deg);
 }
-.social-icons i.icon3 {
-    background-position: -96px 0px;
+.social-icons i.ic_insta {
+    background-position: -94px 0px;
 }
-.social-icons i.icon3:hover {
-  background: #fdaf17 url(../images/img-sprite.png) no-repeat -96px 0px;
+.social-icons i.ic_insta:hover {
+  background: #fdaf17 url(../images/img-sprite.png) no-repeat -94px 0px;
       transform: rotateY(360deg);
 }
 .about-img img {

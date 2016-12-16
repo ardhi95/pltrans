@@ -5,6 +5,8 @@ class C_home extends CI_Controller {
 
 	public function index()
 	{
+		$data['about'] = $this->db->query("SELECT * FROM about");
+		$data['contact'] = $this->db->query("SELECT * FROM contact")->result();
 		$data['query']=$this->m_info->tampilLimit();
 		$this->load->view('front_end/V_home', $data);		
 	}

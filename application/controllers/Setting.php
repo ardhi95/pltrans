@@ -67,7 +67,9 @@ class Setting extends CI_Controller {
 						'office' =>	$this->input->post('office'),
 						'mobile' => $this->input->post('mobile'),
 						'email'  =>	$this->input->post('email'),
-						'fax' 	 =>	$this->input->post('fax')
+						'facebook' 	 =>	$this->input->post('facebook'),
+						'instagram' => $this->input->post('instagram'),
+						'twitter' => $this->input->post('twitter')
 					);
 
 		$this->m_settings->Contact($data);
@@ -127,7 +129,9 @@ class Setting extends CI_Controller {
 						'office' =>	$this->input->post('office'),
 						'mobile' => $this->input->post('mobile'),
 						'email'  =>	$this->input->post('email'),
-						'fax' 	 =>	$this->input->post('fax')
+						'facebook' 	 =>	$this->input->post('facebook'),
+						'instagram' => $this->input->post('instagram'),
+						'twitter' => $this->input->post('twitter')
 					);
 
 		$this->m_settings->editContact($data, $id);
