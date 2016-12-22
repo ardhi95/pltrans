@@ -8,11 +8,14 @@
 				
 				<div class="form-group">
 					<!-- <label for="focusedinput" class="col-sm-2 control-label">Nama Paket Wisata</label> -->
-					<div class="col-sm-5">
+					<div class="col-sm-4">
 						<input type="text" class="form-control1" id="focusedinput" placeholder="Nama Paket Wisata" name="nama_paket" value="<?php echo $key->nama_paket; ?>">
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-3">
 						<input type="text" class="form-control1" id="focusedinput" placeholder="Harga Paket Wisata" name="harga" value="<?php echo $key->harga; ?>">
+					</div>
+					<div class="col-sm-3">
+						<input type="file" class="form-control1" id="focusedinput" placeholder="Default Input" name="foto">
 					</div>
 					<div class="col-sm-2" border=>
 						<button type="submit" class="btn-success btn">Simpan</button>

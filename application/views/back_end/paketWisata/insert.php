@@ -8,23 +8,19 @@
 
 				<div class="form-group">
 					<!-- <label for="focusedinput" class="col-sm-2 control-label">Nama Paket Wisata</label> -->
-					<div class="col-sm-5">
+					<div class="col-sm-4">
 						<input type="text" class="form-control1" id="focusedinput" placeholder="Nama Paket Wisata" name="nama_paket">
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-3">
 						<input type="text" class="form-control1" id="focusedinput" placeholder="Harga Paket Wisata" name="harga">
+					</div>
+					<div class="col-sm-3">
+						<input type="file" class="form-control1" id="focusedinput" placeholder="Default Input" name="foto">
 					</div>
 					<div class="col-sm-2" border=>
 						<button type="submit" class="btn-success btn">Simpan</button>
 					</div>
 				</div>
-				<!-- <div class="form-group">
-					<label for="focusedinput" class="col-sm-2 control-label">Harga</label>
-					<div class="col-sm-8">
-						<input type="text" class="form-control1" id="focusedinput" name="harga">
-					</div>
-				</div> -->
-
 				<div class="form-group">
 					<!-- <label for="focusedinput" class="col-sm-2 control-label">Deskripsi Paket Wisata</label> -->
 						<div class="col-sm-12">

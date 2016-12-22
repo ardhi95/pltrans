@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_info extends CI_Model { 
+class M_info extends CI_Model {
 	
 	public function tampil(){
 		$this->db->order_by('id_info', 'desc');
