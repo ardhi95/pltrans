@@ -9,9 +9,13 @@
 					<span class="glyphicon glyphicon-floppy-disk"></span> Save
 				</button>
 				</div>
-			<textarea name="about" id="content"><?php
-					foreach ($about->result() as $key) {
-					echo $key->content;	} ?></textarea>
+				<textarea name="about" id="content">
+					<?php
+						foreach ($about->result() as $key) {
+							echo $key->content;	
+						} 
+					?>
+				</textarea>
 		</form>
 	</div>
 </div>

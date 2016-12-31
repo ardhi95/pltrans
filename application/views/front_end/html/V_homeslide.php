@@ -2,17 +2,22 @@
 		<section class="slider">
 			<div class="flexslider">
 				<ul class="slides">
+					<?php 
+							$data = $this->db->query("SELECT * FROM slider")->result();
+							foreach ($data as $key) {
+					?>
 					<li>
 						<div class="slider-info">
-							<img src="<?= base_url(); ?>assets/front_end/images/ba1.jpg" class="img-responsive" alt="">
+							<img src="<?=base_url()?>uploads/<?php echo $key->image; ?>" class="img-responsive" alt="">
 						</div>
-						<div class="container">
+						<!-- <div class="container">
 							<div class="banner-text">
 								<h3>Outdoor & Indoor Luxury</h3>
 							</div>
-						</div>
+						</div> -->
 					</li>
-					<li>
+					<?php } ?>
+					<!-- <li>
 						<div class="slider-info">
 							<img src="<?= base_url(); ?>assets/front_end/images/ba2.jpg" class="img-responsive" alt="">
 						</div>
@@ -31,7 +36,7 @@
 								<h3>A Brand New Hotel</h3>
 							</div>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</section>
